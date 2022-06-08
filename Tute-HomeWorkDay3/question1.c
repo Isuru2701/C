@@ -15,6 +15,7 @@ int main(void)
     arr[8] = 9;
     arr[9] = 32;
 
+    //for loop is cleaner and smoother 
     for (int i = 0; i < 10; i++)
     {
         printf("value in index %d is %d\n", i, arr[i]);
