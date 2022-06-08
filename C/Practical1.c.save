@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(void)
+{
+    float num1 = 0, num2 = 0, mod;
+
+    printf("enter value for number 1: ");
+    scanf("%f", &num1);
+    printf("enter value for number 2: ");
+    scanf("%f", &num2);
+
+
+    mod = (num1 % num2);
+
+    printf("sum: %.2f | difference: %.2f |\n product: %.2f | quotient: %.2f |\n remainder: %.2f",
+    num1 + num2, num1 - num2, num1 * num2, num1 / num2, mod);
+
+    return 0;
+}
