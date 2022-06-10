@@ -6,7 +6,7 @@ int main(void)
     int num1 = 20;
     int num2 = 10;
 
-    //pointers
+    // pointers
     int *n1, *n2;
 
     n1 = &num1;
