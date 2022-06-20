@@ -22,7 +22,7 @@ int main()
     Only used functions for neatness and stuffing all 6 patterns into one code :)
     ask me if u have any questions,
     
-    -Isuru
+    -Isuru codse221f-044
     */
 
     asterisk1(lines);
@@ -46,6 +46,13 @@ int main()
     return 0;
 }
 
+/*
+
+*
+**
+***
+
+*/
 void asterisk1(int lines)
 {
     for (int i = 0; i <= lines; i++)
@@ -58,6 +65,14 @@ void asterisk1(int lines)
     }
 }
 
+/*
+
+1
+12
+123
+
+*/
+
 void numbers(int lines)
 {
     for (int i = 0; i <= lines; i++)
@@ -69,6 +84,14 @@ void numbers(int lines)
         printf("\n\n");
     }
 }
+
+/*
+
+@
+**
+@@@
+
+*/
 
 void atasterisk(int lines)
 {
@@ -89,6 +112,16 @@ void atasterisk(int lines)
     }
 }
 
+/*
+
+*****
+
+****
+
+***
+
+*/
+
 void asterisk2(int lines)
 // prints in descending order
 {
@@ -108,6 +141,7 @@ c=2*i - 1
 
 testing::
 
+Note: using '!' instead of spaces because it's easier to read 
 !*!
 ***
 (r2xc3)
