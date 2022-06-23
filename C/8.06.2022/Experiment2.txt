@@ -1,0 +1,58 @@
+#include<stdio.h>
+int main(){
+
+float num1;
+float num2;
+int num3;
+int num4;
+float sum;
+float product;
+float difference,quotient;
+int modulus;
+
+printf("Input no 1 :");
+scanf("%f",&num1);
+
+printf("Input no 2 :");
+scanf("%f",&num2);
+
+printf("\n\n");
+
+ //Sum
+sum=num1+num2;
+printf("Sum = %f \n",num1+num2);
+printf("Sum = %.1f \n\n",sum);
+
+//Product
+product=num1*num2;
+printf("Product = %f \n",num1*num2);
+printf("Product = %.1f \n\n",product);
+
+//difference
+difference=num1*num2;
+printf("Difference = %f \n",num1-num2);
+printf("Difference = %.1f \n\n",difference);
+
+//quotient
+quotient=num1/num2;
+printf("quotient = %f \n",num1/num2);
+printf("quotient = %.1f \n\n",quotient);
+
+
+printf("Input no 3 :");
+scanf("%d",&num3);
+
+printf("Input no 4 :");
+scanf("%d",&num4);
+
+printf("\n\n");
+
+//modulus
+modulus=num3%num4;
+printf("modulus = %d \n",num3%num4);
+printf("modulus = %d \n\n",modulus);
+
+
+
+return 0;
+}
