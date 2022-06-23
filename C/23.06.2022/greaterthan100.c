@@ -14,7 +14,7 @@ int main(void)
         {
             sum += num;
         }
-        counter++;
+        ++counter;
     }
 
     printf("sum is: %i", sum);
