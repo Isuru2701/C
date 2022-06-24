@@ -9,33 +9,40 @@ You are allowed to decide type, name, and parameters of each function meaningful
 Gets vehicle number, distance travelled, and time taken by the vehicle and calculate the vehicle speed.
 
     Function 2:
-        Check the calculated vehicle speed and decide fine amount.
+Check the calculated vehicle speed and decide fine amount.
 If vehicle speed exceeds 100, fine amount is 10000(LKR) and if it exceeds 70, fine amount is 2000(LKR).
 
     Function 3:
-        Output vehicle number and fine amount of the vehicle.
+Output vehicle number and fine amount of the vehicle.
 
     Function main:
-        Call each function.
+Call each function.
 
 */
 
-int GetInfo(void);
+
+//global variable for vehicle number of type int, because functions can't return multiple different types
+int number;
+
+void OutputDetails(float fine);
 float CheckSpeed(float speed);
-void OutputDetails(int number, float fine);
+float GetInfo(void);
 
 int main(void)
 {
-    
+
+    OutputDetails(CheckSpeed(GetInfo()));    
+
     return 0;
 }
 
-int GetInfo(void)
+float GetInfo(void)
 {
     float distance, time, speed;
-    int vehicleNumber;
+
     printf("enter vehicle number: ");
-    scanf("%i", &vehicleNumber);
+    scanf("%d", &number);
+
 
     printf("enter distance travelled: ");
     scanf("%f", &distance);
@@ -44,7 +51,8 @@ int GetInfo(void)
 
     speed = distance / time;
 
-    return vehicleNumber, speed;
+    return speed;
+
 }
 
 float CheckSpeed(float speed)
@@ -57,11 +65,13 @@ float CheckSpeed(float speed)
     {
         return 2000;
     }
+    else 
+    {
+        return 0;
+    }
 }
 
-void OutputDetails(int number, float fine)
+void OutputDetails(float fine)
 {
-
-    printf("vehicle number %d\nfine: %.2f",number, fine);
-
+    printf("\nVehicle Number: %d\nFined amount: %.2fLKR", number, fine);
 }
