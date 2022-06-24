@@ -12,12 +12,5 @@ int main(void)
 
     printf("\n\n");
 
-    counter = 1;
-    while (counter < 1)
-    {
-        printf("hello\n");
-        counter++;
-    }
-
     return 0;
 }
