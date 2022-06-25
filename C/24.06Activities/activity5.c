@@ -73,5 +73,5 @@ float CheckSpeed(float speed)
 
 void OutputDetails(float fine)
 {
-    printf("\nVehicle Number: %d\nFined amount: %.2fLKR", number, fine);
+    printf("\nVehicle Number: %d\nFined amount: LKR%.2f", number, fine);
 }
