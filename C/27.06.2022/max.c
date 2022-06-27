@@ -6,11 +6,11 @@ int main(void)
 {
     long num1, num2;
     printf("enter number 1: ");
-    scanf("%li", &num1);
+    scanf("%ld", &num1);
     printf("enter number 2: ");
-    scanf("%li", &num2);
+    scanf("%ld", &num2);
 
-    printf("maximum is %li", Max(num1, num2));
+    printf("maximum is %ld", Max(num1, num2));
 
     return 0;
 }
