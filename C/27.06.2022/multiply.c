@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 float Multiply(float n1, float n2);
 
 int main(void)
