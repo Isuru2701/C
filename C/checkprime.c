@@ -6,9 +6,11 @@ int main(void)
     printf("enter number to check: ");
     scanf("%d", &num);
 
-    for (int i = 1; i < num; i++)
+
+    //one is not a prime
+    for (int i = 2; i < num; i++)
     {
-        if ((num % i) == 0 && (i != 1))
+        if ((num % i) == 0)
         {
             printf("number is not a prime");
             return 0;
