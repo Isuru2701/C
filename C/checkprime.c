@@ -6,8 +6,7 @@ int main(void)
     printf("enter number to check: ");
     scanf("%d", &num);
 
-
-    //one is not a prime
+    // one is not a prime
     for (int i = 2; i < num; i++)
     {
         if ((num % i) == 0)
@@ -16,7 +15,10 @@ int main(void)
             return 0;
         }
     }
-    printf("number is a prime");
+    if (num > 1)
+    {
+        printf("number is a prime");
+    }
 
     return 0;
 }
