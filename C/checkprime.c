@@ -6,11 +6,15 @@ int main(void)
     printf("enter number to check: ");
     scanf("%d", &num);
 
-    for (int i = 0; i < num; i++)
+    for (int i = 1; i < num; i++)
     {
-        if (num % i == 0)
+        if ((num % i) == 0 && (i != 1))
         {
-            
+            printf("number is not a prime");
+            return 0;
         }
     }
+    printf("number is a prime");
+
+    return 0;
 }
