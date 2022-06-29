@@ -66,7 +66,7 @@ int LCM(int num1, int num2)
 int HCF(int num1, int num2)
 {
 
-    retrun 0;
+    return 0;
 }
 
 bool checkisPrime(int value)
