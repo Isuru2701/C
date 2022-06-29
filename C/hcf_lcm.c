@@ -30,30 +30,26 @@ int main(void)
 
     return 0;
 }
+
 /*
-4,5
-
-= 2,5 | 2
-= 2,5 | 2
-= 1,5 | 5
-= 1,1 ---
-=      20
-
+The Least Common Multiple of two or more numbers
+ is the smallest number among all common multiples of the given numbers.
 
 */
 int LCM(int num1, int num2)
 {
-    int lcm = 1;
 
     int max = (num1 > num2) ? num1 : num2;
 
-    while(1)
+    while (1)
     {
-        if (max % num1 == 0 && max %num2 == 0)
+        if (max % num1 == 0 && max % num2 == 0)
         {
             return max;
         }
+        max++;
     }
+    
 }
 
 int HCF(int num1, int num2)
