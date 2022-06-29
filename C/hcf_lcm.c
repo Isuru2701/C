@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int LCM(int num1, int num2);
 int HCF(int num1, int num2);
@@ -44,12 +45,25 @@ int LCM(int num1, int num2)
     int lcm = 1, prime;
     do
     {
-        
-
 
     } while (num1 != 1 && num2 != 1);
 }
 
 int HCF(int num1, int num2)
 {
+}
+
+bool checkisPrime(int value)
+{
+    for (int i = 2; i < value; i++)
+    {
+        if ((value % i) == 0)
+        {
+            return false;
+        }
+    }
+    if (value > 1)
+    {
+        return true;
+    }
 }
