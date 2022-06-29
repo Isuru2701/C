@@ -43,25 +43,17 @@ int main(void)
 */
 int LCM(int num1, int num2)
 {
-    int lcm = 1, num;
-    while (num1 != 1 && num2 != 1)
+    int lcm = 1;
+
+    int max = (num1 > num2) ? num1 : num2;
+
+    while(1)
     {
-        if (checkisPrime(num))
+        if (max % num1 == 0 && max %num2 == 0)
         {
-            if (num1 % num == 0)
-            {
-                num1 /= num;
-                lcm *= num;
-            }
-            if (num2 % num == 0)
-            {
-                num2 /= num;
-                lcm *=num;
-            }
+            return max;
         }
-        num++;
     }
-    return lcm;
 }
 
 int HCF(int num1, int num2)
