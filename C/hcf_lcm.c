@@ -49,12 +49,26 @@ int LCM(int num1, int num2)
         }
         max++;
     }
-    
 }
+/*
+The Highest Common Factor (HCF) of two numbers is
+ the highest possible number which divides both the numbers completely.
 
+20, 16
+
+10,8 | 2
+5,4  | 2
+
+
+*/
 int HCF(int num1, int num2)
 {
-
+    int max = (num1 > num2)? num1: num2;
+    if (max % num1 == 0 && max % num2 == 0)
+    {
+        return max;
+    }
+    max--;
     return 0;
 }
 
