@@ -63,18 +63,19 @@ The Highest Common Factor (HCF) of two numbers is
 */
 int HCF(int num1, int num2)
 {
-    int max = (num1 > num2)? num1: num2;
-    if (max % num1 == 0 && max % num2 == 0)
+
+    for (int hcf = 1; hcf <= num1 && hcf <= num2; ++hcf)
     {
-        return max;
+        if ((num1 % hcf == 0) && (num2 % hcf == 0))
+        {
+            return hcf;
+        }
     }
-    max--;
-    return 0;
 }
 
 bool checkisPrime(int value)
 {
-    for (int i = 2; i < value; i++)
+    for (int i = 2; i < value; ++i)
     {
         if (value % i == 0)
         {
