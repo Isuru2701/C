@@ -3,6 +3,7 @@
 
 int LCM(int num1, int num2);
 int HCF(int num1, int num2);
+bool checkisPrime(int value);
 
 /*
 
@@ -42,15 +43,30 @@ int main(void)
 */
 int LCM(int num1, int num2)
 {
-    int lcm = 1, prime;
+    int lcm = 1, num;
     do
     {
+        if (checkisPrime(num))
+        {
+            if ((num1 % num) == 0)
+            {
+                num1 /= num;
+                lcm *= num;
+            }
+            if ((num2 % num) == 0)
+            {
+                num2 /=num;
+                lcm *= num;
+            }
+        }
 
     } while (num1 != 1 && num2 != 1);
 }
 
 int HCF(int num1, int num2)
 {
+
+    retrun 0;
 }
 
 bool checkisPrime(int value)
