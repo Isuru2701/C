@@ -26,7 +26,7 @@ int main(void)
     printf("enter number 2: ");
     scanf("%d", &num2);
 
-    print("LCM is: %d\nHCF is: %d", LCM(num1, num2), HCF(num1, num2));
+    printf("LCM is: %d\nHCF is: %d", LCM(num1, num2), HCF(num1, num2));
 
     return 0;
 }
@@ -44,23 +44,24 @@ int main(void)
 int LCM(int num1, int num2)
 {
     int lcm = 1, num;
-    do
+    while (num1 != 1 && num2 != 1)
     {
         if (checkisPrime(num))
         {
-            if ((num1 % num) == 0)
+            if (num1 % num == 0)
             {
                 num1 /= num;
                 lcm *= num;
             }
-            if ((num2 % num) == 0)
+            if (num2 % num == 0)
             {
-                num2 /=num;
-                lcm *= num;
+                num2 /= num;
+                lcm *=num;
             }
         }
-
-    } while (num1 != 1 && num2 != 1);
+        num++;
+    }
+    return lcm;
 }
 
 int HCF(int num1, int num2)
@@ -73,13 +74,10 @@ bool checkisPrime(int value)
 {
     for (int i = 2; i < value; i++)
     {
-        if ((value % i) == 0)
+        if (value % i == 0)
         {
             return false;
         }
     }
-    if (value > 1)
-    {
-        return true;
-    }
+    return true;
 }
