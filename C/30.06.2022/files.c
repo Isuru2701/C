@@ -37,6 +37,8 @@ int main(void)
 
     fclose(filepointer);
 
+
+
     filepointer = fopen("logs.txt", "r");
     if (filepointer == NULL) // check if the file is created
     {
