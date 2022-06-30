@@ -7,7 +7,7 @@ int main(void)
 
     FILE *filepointer;
 
-    filepointer = fopen("logs.txt", "w");
+    filepointer = fopen("number.txt", "w");
                   //fopen("<filename.<filetype>", "<file mode>")
                   //w - creates file, overwrites any existing file with same name
                   //r - read
@@ -15,7 +15,8 @@ int main(void)
                   //r+ - update (writing and reading)
                   //w+ - creates file for update, if if already exits, discards current contents
                   //a+ - open/create a file for update, written to end of file
-                  
 
-    
+         
+
+    return 0;
 }
