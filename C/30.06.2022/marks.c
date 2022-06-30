@@ -12,6 +12,11 @@ int main(void)
     {
         printf("enter id: ");
         scanf("%d", &id);
+
+        if(id == 9999)
+        {
+            break;
+        }
         printf("enter name: ");
         scanf("%s", name);
         printf("enter average marks: ");
@@ -19,8 +24,8 @@ int main(void)
 
         pointer = fopen("marks.txt", "a");
 
-        fprintf(pointer, "%d %s %f\n", id, name, marks);
-    } while (id != 9999);
+        fprintf(pointer, "%d %s %.1f\n", id, name, marks);
+    } while (1);
 
     fclose(pointer);
 
