@@ -6,8 +6,10 @@ int main(void)
     // file type pointer - stores memory address of a file loaded to memory
 
     FILE *filepointer;
+    char name[20];
+    int age;
 
-    filepointer = fopen("number.txt", "w");
+    filepointer = fopen("logs.txt", "a");
     // fopen("<filename.<filetype>", "<file mode>")
     // w - creates file, overwrites any existing file with same name
     // r - read
@@ -24,15 +26,36 @@ int main(void)
     else
     {
         printf("File exists\n");
-        printf("file address %x", filepointer);
+        printf("file address %x\n", filepointer);
     }
 
-    for (int i = 1; i <= 10; ++i)
+    // fprintf(<pointer>, "<string>", <values>);
+    printf("enter name and age: ");
+    scanf("%s %d", &name, &age);
+
+    fprintf(filepointer, "%s %d\n", name, age);
+
+    fclose(filepointer);
+
+    filepointer = fopen("logs.txt", "r");
+    if (filepointer == NULL) // check if the file is created
     {
-        // fprintf(<pointer>, "<string>", <values>);
-        fprintf(filepointer, "%d\n", i);
+        printf("File does not exist");
+        return 0;
+    }
+    else
+    {
+        printf("File exists\n");
+        printf("file address %x\n", filepointer);
     }
 
+    char nameinfile[20];
+    int ageinfile;
+    while (!feof(filepointer))
+    {
+        fscanf(filepointer, "%s %d", nameinfile, &ageinfile);
+        printf("name: %s\t age: %d\n", nameinfile, ageinfile);
+    }
     fclose(filepointer);
     return 0;
 }
