@@ -11,23 +11,32 @@ int main(void)
     struct tm *tptr;
     time_t t;
     FILE *filepointer;
-    char name[20], address[20];
+    char name[20], address[20], buffer[80];
     int age;
 
     printf("My name is: %s\n", name);
 
-    filepointer = fopen("data.txt", "w");
+    filepointer = fopen("data.txt", "a");
 
     printf("enter name age and address: ");
-    scanf("%[^\n]%*c %i %[^\n]%*c", name, &age, address);
+    scanf("%s %i %s", name, &age, address);
 
-    printf("name is: %s\n", name);
+    printf("name: %s | age: %i | address: %s\n", name, age, address);
+
+    //time
     t = time(NULL);
     tptr = localtime(&t);
-    printf("%s", asctime(tptr));
+    strftime(buffer, 80, "%d_%m_%Y_%I:%M%p", tptr);
+    printf("%s\n", buffer);
 
+    fprintf(filepointer, "%s %s %i %s\n",buffer, name, age, address);
 
     fclose(filepointer);
 
     return 0;
+}
+
+void ReadFile(char *file)
+{
+    
 }
