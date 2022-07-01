@@ -11,18 +11,23 @@ int main(void)
     struct tm *tptr;
     time_t t;
     FILE *filepointer;
-    char *name, *address;
+    char name[20], address[20];
     int age;
+
+    printf("My name is: %s\n", name);
 
     filepointer = fopen("data.txt", "w");
 
     printf("enter name age and address: ");
-    scanf("%s %i %s", &name, &age, &address);
+    scanf("%[^\n]%*c %i %[^\n]%*c", name, &age, address);
 
-    printf("age is:%i\n", age);
+    printf("name is: %s\n", name);
     t = time(NULL);
     tptr = localtime(&t);
     printf("%s", asctime(tptr));
+
+
+    fclose(filepointer);
 
     return 0;
 }
