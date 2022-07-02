@@ -22,6 +22,8 @@ Call each function.
 
 
 //global variable for vehicle number of type int, because functions can't return multiple different types
+//going for int cuz distance and time can be a float unless explicitly stated, which it is not.
+//if u assume distance and time are ints, u can include this as a local variable in the GetInfo(void) function no worries.
 int number;
 
 void OutputDetails(float fine);
