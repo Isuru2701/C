@@ -61,7 +61,7 @@ void ReadFile(char *file)
     while (!feof(filepointer))
     {
         fscanf(filepointer, "%s %s %i %s", time, name, &age, address);
-        printf("name: %s\t age: %i\t address: %s\t logged at: %s\n", name, age, address, time);
+        printf("name: %s\t age: %i\t address: %s \t logged at: %s\n", name, age, address, time);
     }
     fclose(filepointer);
 }
