@@ -1,17 +1,17 @@
 #include <stdio.h>
 #include <time.h>
 
-void ReadFile(char *file);
+void WriteFile(char *file);
 
 int main(void)
 {
 
     // a program to enter data: record datetime, user input; name, age, address
-    ReadFile("data.txt");
+    WriteFile("data.txt");
     return 0;
 }
 
-void ReadFile(char *file)
+void WriteFile(char *file)
 {
     // time management:
 
@@ -39,4 +39,5 @@ void ReadFile(char *file)
     fprintf(filepointer, "%s %s %i %s\n", buffer, name, age, address);
 
     fclose(filepointer);
+
 }
