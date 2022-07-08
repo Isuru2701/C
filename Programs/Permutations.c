@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int Permute(int n, int r);
+int Combine(int n, int r);
 
 int main(void)
 {
@@ -11,7 +12,7 @@ int main(void)
 
     ans = Permute(n, r);
 
-    printf("Permutation of %d and %d is %d", n, r, ans);
+    printf("Permutation of %d and %d is %d\n\n", n, r, ans);
 
     ans = Combine(n, r);
 
