@@ -79,7 +79,7 @@ void numbers(int lines)
     {
         for (int j = 1; j <= i; j++)
         {
-            printf("%c", j + 48); // converting to ascii
+            printf("%i", j); // converting to ascii
         }
         printf("\n\n");
     }
@@ -163,10 +163,13 @@ Note: using '!' instead of spaces because it's easier to read
 !*******!
 *********
 (r5xc9) 5l
+
+width = number of lines
+length = 2xwidth - i 
 */
 void asterisk3(int lines)
 {
-    // lines
+    // lines -> i is the line number
     for (int i = 1; i <= lines; i++)
     {
         // preceeding spaces
