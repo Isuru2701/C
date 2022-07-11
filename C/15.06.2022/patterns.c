@@ -144,25 +144,25 @@ testing::
 Note: using '!' instead of spaces because it's easier to read 
 !*!
 ***
-(r2xc3)
+(r2xc3) 2l
 
 !!*!!
 !***!
 *****
-(r3xc5)
+(r3xc5) 3l
 
 !!!*!!!
 !!***!!
 !*****!
 *******
-(r4xc7)
+(r4xc7) 4l
 
 !!!!*!!!!
 !!!***!!!
 !!*****!!
 !*******!
 *********
-(r5xc9)
+(r5xc9) 5l
 */
 void asterisk3(int lines)
 {
@@ -180,7 +180,7 @@ void asterisk3(int lines)
         {
             printf("*");
         }
-        // trailing spaces
+        // trailing spaces - not necessary, tried it out anyway
         for (int k = (lines - i); k > 0; k--)
         {
             printf(" ");
