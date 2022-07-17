@@ -27,6 +27,7 @@ int main(void)
     scanf("%d", &num2);
 
     printf("LCM is: %d\nHCF is: %d", LCM(num1, num2), HCF(num1, num2));
+    printf("\nis num1 prime: %s\nis num2 prime: %s", checkisPrime(num1)? "yes":"no", checkisPrime(num2)? "yes":"no");
 
     return 0;
 }
