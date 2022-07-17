@@ -4,6 +4,12 @@ of given three integers. (Write separate functions for each operation)
 */
 
 #include <stdio.h>
+int addition(int *list);
+int multiplication(int *list);
+int minimum(int *list);
+int maximum(int *list);
+float average(int *list);
+
 
 int main(void)
 {
@@ -12,7 +18,7 @@ int main(void)
     printf(" addition: %.2f\n multiplication: %.2f\n minimum: %d\n maximum: %d\n average: %d", addition(arr), multiplication(arr), minimum(arr), maximum(arr), average(arr));
 }
 
-addition(int *list)
+int addition(int *list)
 {
     int i = 0, sum = 0;
     while (*(list + i) != NULL)
@@ -22,7 +28,7 @@ addition(int *list)
     }
     return sum;
 }
-multiplication(int *list)
+int multiplication(int *list)
 {
     int i = 0, product = 0;
     while (*(list + i) != NULL)
@@ -32,7 +38,7 @@ multiplication(int *list)
     }
     return product;
 }
-minimum(int *list)
+int minimum(int *list)
 {
     int i = 0, min = *(list + i);
     ++i;
@@ -45,7 +51,7 @@ minimum(int *list)
     }
     return min;
 }
-maximum(int *list)
+int maximum(int *list)
 {
     int i = 0, max = *(list + i);
     ++i;
@@ -58,12 +64,12 @@ maximum(int *list)
     }
     return max;
 }
-average(int *list)
+float average(int *list)
 {
     int i = 0;
-    while(*(list + i) != NULL)
+    while (*(list + i) != NULL)
     {
         ++i;
     }
-        return addition(list) / i;
+    return addition(list) / i;
 }
