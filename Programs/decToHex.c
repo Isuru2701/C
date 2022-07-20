@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 
 void DectoHex(char *code);
 void HextoDec(char *code);
-
 
 int main(void)
 {
@@ -75,14 +75,17 @@ void DectoHex(char *code)
 }
 
 /*
-    decimal to hex:
-        120 = 120/16 -> 8 ^
-                        7 |
-        120_10 = 78_16
+    hex to decimal:
+        78_16
+        8 x 16^0 =   8
+        7 x 16^1 = 112
+                 ------
+                   120
+                ======
 
 */
 
 void HextoDec(char *code)
 {
-
+    
 }
