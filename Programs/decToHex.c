@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 
+void DectoHex(char *code);
+void HextoDec(char *code);
+
+
 int main(void)
 {
     char *code = "";
@@ -25,19 +29,60 @@ int main(void)
     return 0;
 }
 
+/*
+    decimal to hex:
+        120 = 120/16 -> 8 ^
+                        7 |
+        120_10 = 78_16
+
+*/
+
 void DectoHex(char *code)
 {
-    /*
-        decimal to hex:
-            120 = 120/16 -> 8 ^
-                            7 |
-            120_10 = 78_16
-                  
-    */
-    int dec = (int)code;
+    int dec = atoi(code), remainder = 0; // int atoi(str) converts a str to int
     char *hex;
-    for (int i = 0; i < strlen(code); ++i)
+    do
     {
-        
-    }
+        remainder = dec % 16;
+        switch (remainder)
+        {
+        case 10:
+            strncat(hex, 'A', 1);
+            break;
+        case 11:
+            strncat(hex, 'B', 1);
+            break;
+        case 12:
+            strncat(hex, 'C', 1);
+            break;
+        case 13:
+            strncat(hex, 'D', 1);
+            break;
+        case 14:
+            strncat(hex, 'E', 1);
+            break;
+        case 15:
+            strncat(hex, 'F', 1);
+            break;
+        default:
+            strncat(hex, &remainder, 1);
+            break;
+        }
+        dec /= 16;
+    } while (dec > 16);
+
+    printf("Hex of %s_10 is %s_16", code, hex);
+}
+
+/*
+    decimal to hex:
+        120 = 120/16 -> 8 ^
+                        7 |
+        120_10 = 78_16
+
+*/
+
+void HextoDec(char *code)
+{
+
 }
