@@ -11,9 +11,9 @@ int main(void)
     int type;
 
     printf("enter 1 to convert from Dec to Hex\nenter 2 to convert from Hex to Dec\n");
-    scanf("%d", &type);
+    scanf(" %d", &type);
     printf("enter value to convert: ");
-    scanf("%s", code);
+    scanf(" %s", code);
 
     switch (type)
     {
