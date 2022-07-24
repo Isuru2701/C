@@ -36,6 +36,16 @@ int main(void)
 The Least Common Multiple of two or more numbers
  is the smallest number among all common multiples of the given numbers.
 
+ 20, 16
+
+ 2 | 10, 8
+ 2 | 5, 4
+ 2 | 5, 2
+ 2 | 5, 1
+ 5 | 1, 1
+
+ LCM = 2 x 2 x 2 x 2 x 5 = 80 
+
 */
 int LCM(int num1, int num2)
 {
