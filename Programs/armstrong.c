@@ -12,9 +12,9 @@ approach:
 [] loop thru 500 numbers
 [] check isArmstrong?:
     [] while loop
-    [] separate each digit using num%10
-    [] add it's cube to sum
-    [] remove the digit using num/10
+        [] separate each digit using num%10
+        [] add it's cube to sum
+        [] remove the digit using num/10
 [] IF num == sum output num
 */
 
