@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /*
-armstrong numbers are numbers which equal the sum of their individual digits
+armstrong numbers are numbers which equal the sum of their individual digits,
+output the armstrong numbers from 1 to 500
 */
 
-// outputs the armstrong numbers from 1 to 500
 
 /*
 approach:
@@ -27,7 +27,7 @@ int main(void)
         while (num > 0)
         {
             digit = num % 10;                    // for example: 457 % 10 = 7,(cuz 457/10 = 45 remainder 7) like that we extract the digit
-            sum = sum + (digit * digit * digit); // cube digit and add to sumz
+            sum = sum + (digit * digit * digit); // cube digit and add to sum
             num = num / 10;                      // divide by 10 to remove the digit, we get rid of it so that in the next iteration the next digit is under scrutiny
                                                  // we don't need to worry about decimal values resulting from this, cuz integers automatically drop anything on the rightside of the decimal point
         }
