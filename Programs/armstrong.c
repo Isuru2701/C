@@ -38,7 +38,7 @@ int main(void)
         count++;
 
         sum = 0; //reset sum to zero for next iteration
-    } while (count < 500); //u can use a for loop, while loop, or a do while. I use do-while cuz i prefer that one.
+    } while (count <= 153); //u can use a for loop, while loop, or a do while. I use do-while cuz i prefer that one.
 
     return 0;
 }
