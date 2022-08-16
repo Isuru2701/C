@@ -1,7 +1,6 @@
-public class First { // PACKAGE.CLASS
-
-    public static void main(String[] args) { //PACKAGE.CLASS.METHOD
-
-
+class First { //should be file name
+    public static void main(String[] args){
+        System.out.println("Hello world");
     }
+
 }
