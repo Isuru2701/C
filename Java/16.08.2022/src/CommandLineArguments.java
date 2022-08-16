@@ -1,6 +1,6 @@
-class NewMain {
+class CLA {
     public static void main(String[] args) {
-        for (String arg : args) {
+        for (String arg : args) { //means "for arg in args". loops through the array basically, and loads the value of args[index] into arg
             System.out.print(arg + " ");
 
             /*
