@@ -14,6 +14,7 @@ public class Rainfall {
         int max = 0, min = 0;
         float total = 0;
 
+
         Scanner sc = new Scanner(System.in);
 
         for (int i = 0; i < 5; ++i) {
@@ -22,6 +23,7 @@ public class Rainfall {
             rainfall[i] = sc.nextFloat();
 
             total += rainfall[i];
+
             if (rainfall[i] > rainfall[max]) {
                 max = i;
             } else if (rainfall[i] < rainfall[min]) {
