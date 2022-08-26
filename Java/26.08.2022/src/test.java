@@ -9,12 +9,6 @@ public class test {
         int z = 50;
         double a = 50;
         double[] n = new double[3];
-        while(z == 50)
-        {
-            System.out.println(z);
-            z++;
-
-        }
 
 
 
