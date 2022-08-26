@@ -28,6 +28,7 @@ public class Rainfall {
                 min = i;
             }
         }
-        System.out.println("Max rainfall: " + rainfall[max] + " Min rainfall: " + rainfall[min] + "\n Average rainfall: " + total / 5);
+        System.out.println("Max rainfall: " + rainfall[max] + " Min rainfall: " + rainfall[min] + "\nAverage rainfall: " + total / 5);
+        sc.close();
     }
 }
