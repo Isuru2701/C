@@ -9,11 +9,9 @@ first java application
 class HelloJava {
     public static void main(String[] args) {
 
-        //experiment 1
-        System.out.println("Hello Java");
+        System.out.println("Isuru Yahampath");
 
-        //experiment 2
-        System.out.print("NIBM");
+        System.out.println("Diploma in Software Engineering");
 
     }
 }
