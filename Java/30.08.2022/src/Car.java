@@ -5,7 +5,7 @@ class Car {
     }
  }
 
-class Main {
+class CarMain {
     public static void main(String[] args) {
         Car myCar = new Car();
         myCar.accelerate(50.4F);
