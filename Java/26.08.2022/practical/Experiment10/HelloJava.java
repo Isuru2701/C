@@ -1,3 +1,4 @@
+package Experiment10;
 import java.util.Scanner;
 
 class VariableJava {

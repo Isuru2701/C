@@ -1,3 +1,5 @@
+package Experiment11;
+
 import java.util.Scanner;
 public class Exercise3 {
 	

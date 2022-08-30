@@ -1,3 +1,5 @@
+package Experiment6;
+
 class HelloJava {
 	
 	public static void main(String[] args){

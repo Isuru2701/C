@@ -1,3 +1,5 @@
+package Experiment7;
+
 class HelloJava {
 	public static void main(String args []){
 		int a = 50;
