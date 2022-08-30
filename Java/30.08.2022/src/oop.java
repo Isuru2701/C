@@ -4,6 +4,9 @@ class Book {
     void open() {
         System.out.println("book opened");
     }
+    void close() {
+        System.out.println("book closed");
+    }
 }
 
 class oop {
@@ -13,5 +16,7 @@ class oop {
 
         Book anotherBook = new Book();
         anotherBook.open();
+
+
     }
 }
