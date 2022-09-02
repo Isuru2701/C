@@ -1,5 +1,3 @@
-import javax.swing.JSpinner.NumberEditor;
-
 class Bill {
 
     private int number;
