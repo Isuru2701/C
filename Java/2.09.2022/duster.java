@@ -9,7 +9,7 @@ class Duster {
 	}
 }
 
-class Main {
+class DusterMain {
 	public static void main(String[] args) {
 		Duster myDuster = new Duster();
 		myDuster.setPrice(400);
