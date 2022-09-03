@@ -36,16 +36,16 @@ class BillMain {
         //test object 1
         Bill myBill = new Bill();
         myBill.setNumber(502382);
-        myBill.setUnits(420);
-        myBill.setCharge(10);
+        myBill.setUnits(420F);
+        myBill.setCharge(10F);
         System.out.println(myBill.invoice());
 
         //test object 2
         Bill myBill2 = new Bill();
         myBill2.setNumber(502382);
-        myBill2.setUnits(90);
-        myBill2.setCharge(10);
-        System.out.println(myBill2.invoice());
+        myBill2.setUnits(90F);
+        myBill2.setCharge(10F);
+        System.out.println(myBill2.invoice());       
 
     }
 }
