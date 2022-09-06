@@ -91,10 +91,10 @@ void Log(int vehicles)
 
         for (int i = 0; i < 10; i++)
         {
-            if (type[i] == id) //does not do any validation, thus relies on user technical knowledge - a limitation
+            if (type[0] == id) //does not do any validation, thus relies on user technical knowledge - a limitation
             {
-                Quantity[i] += pumped;
-                Remaining[i] = startingQuantity[i] - Quantity[i];
+                Quantity[0] += pumped;
+                Remaining[0] = startingQuantity[0] - Quantity[0];
                 //printf("\n\n %d %.2f %.2f %.2f %.2f", type[i], startingQuantity[i], unitPrice[i], Quantity[i], Remaining[i]); //- printf debugging - ignore
 
                 break;
