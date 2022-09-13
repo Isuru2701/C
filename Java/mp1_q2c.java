@@ -1,5 +1,3 @@
-import java.security.InvalidKeyException;
-
 /*
 XYZ Company exports many products to different countries. There are several employees 
 working in XYZ company. Each employee has employee id, employee name, basic salary, 
