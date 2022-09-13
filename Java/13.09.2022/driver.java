@@ -23,11 +23,17 @@ class Vehicle {
         this.number = number;
 
     }
-    public String getModel(){
+
+    public String getModel() {
         return model;
     }
-    public int getNumber(){
+
+    public int getNumber() {
         return number;
+    }
+
+    public void showDetails() {
+        System.out.println("Vehicle model: " + model + "\tNumber: " + number);
     }
 }
 
