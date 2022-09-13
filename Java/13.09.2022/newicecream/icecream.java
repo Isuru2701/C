@@ -55,7 +55,6 @@ class IceCream {
 
         //income  == revenue - costs, so we need to remove the cash outflow
         income -= this.milk.getQtyBought() * this.milk.getPrice();
-        System.out.println("Qty ice cream made: " + qtyOnHand);
     }
 
     public void sell(float qty) {
@@ -97,6 +96,7 @@ class ABC {
 
         bought = H.sells(500F);
         vanilla.makeIceCream(bought);
+
         bought = J.sells(300F);
         mango.makeIceCream(bought);
 
