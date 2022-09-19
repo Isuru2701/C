@@ -1,9 +1,10 @@
 class Customer {
 	private String cName;
-	private float calldur, dataUsage, smsNum;
+	private float calldur, dataUsage;
+	private int smsNum;
 	private double mobileBill, dataBill, totalBill;
 
-	public Customer(String n, float dur, float sms, float data) {
+	public Customer(String n, float dur, int sms, float data) {
 
 		cName = n;	
 		calldur = dur;
@@ -78,7 +79,7 @@ class Main {
 	public static void main(String[] args) {
 
 		//do we have to 'set' the data or take inputs? ask Sir l8r
-		Customer C1 = new Customer("John", 200F, 400F, 20F);
+		Customer C1 = new Customer("John", 200F, 400, 20F);
 
 		MobilePackage lite = new MobilePackage(10F, 1F, 500F);
 		InternetPackage web = new InternetPackage(200F, 400F);
