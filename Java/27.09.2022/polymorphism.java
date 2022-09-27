@@ -27,7 +27,7 @@ class Item {
 }
 
 class Computer extends Item {
-    public void show() {  //method is overriden
+    public void show() {  //method is overriden - dynamic polymorphism (run time)
         System.out.println("This is a computer");
 
     }
@@ -36,11 +36,31 @@ class Computer extends Item {
     }
 }
 
+class Student {
+        //method overloading - (static)compile time polymorphism
+    public void show() {
+        System.out.println("I am a student");
+
+    }
+
+    public void show(int age) {
+        System.out.println("My age is: " + age);
+    }
+    public void show(int age, double weight) {
+        System.out.println("My age is: " + age + " My weight is: " + weight);
+    }
+}
 
 class Main {
     public static void main(String[] args) {
+        //overriding (dynamic / runtime)
         Computer computer = new Computer();
         computer.show();
 
+        //overloading (static / compile time)
+        Student student = new Student();
+        student.show();
+        student.show(15);
+        student.show(12, 32);
     }
 }
