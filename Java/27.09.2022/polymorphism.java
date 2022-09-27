@@ -20,16 +20,20 @@ class Item {
     public void show() {
         System.out.println("This is an item");
     }
+    public void display() {
+        System.out.println("This is not expensive");
+    }
+
 }
 
 class Computer extends Item {
     public void show() {  //method is overriden
         System.out.println("This is a computer");
+
     }
-}
-
-class Mac extends Computer {
-
+    public void display() {
+        System.out.println("This is expensive");
+    }
 }
 
 
