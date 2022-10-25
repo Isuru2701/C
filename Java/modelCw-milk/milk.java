@@ -137,6 +137,8 @@ class Main {
 		Milk milkObj = new Milk();
 		boolean flag = false;
 		String input = "";
+
+		//Validation
 		do{
 			System.out.println("Enter grade of milk: ");
 
